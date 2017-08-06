@@ -1,0 +1,36 @@
+{
+  "env": { "browser": true },
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true }
+  },
+
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+
+  "rules": {
+    "indent": "off",
+    "no-console": ["error", {"allow": ["warn", "error"]}],
+    "no-global-assign": "off",
+    "no-undef": "off",
+    "no-unused-vars": ["error", {"vars": "local"}],
+    "no-var": "error",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": "off",
+    "spaced-comment": "off"
+  },
+
+  "overrides": {
+    "files": ["**.js"],
+    "parserOptions": {
+      "ecmaFeatures": { "jsx": false }
+    }
+  }
+}

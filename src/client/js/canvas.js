@@ -1,16 +1,15 @@
-class Canvas {
+Madness.Canvas = class Canvas {
   constructor() {
-    this.canvas = this.initCanvas();
+    this.canvas = this.setupCanvas();
     this.graph = this.canvas.getContext("2d");
   }
 
-  initCanvas() {
+  setupCanvas() {
     const canvas = document.querySelector("#canvas");
     canvas.width = Config.SCREEN_WIDTH;
     canvas.height = Config.SCREEN_HEIGHT;
     return canvas;
   }
-
 
   ////////////////////////// Getters //////////////////////////
 
@@ -26,7 +25,6 @@ class Canvas {
     return this.canvas.height;
   }
 
-
   ////////////////////////// Util /////////////////////////////
 
   normalizePoint(point, xOffset, yOffset) {
@@ -34,7 +32,6 @@ class Canvas {
     const newY = point.y - ((yOffset || xOffset) / 2);
     return new Point(newX, newY);
   }
-
 
   ////////////////////////// Drawing //////////////////////////
 
@@ -76,4 +73,4 @@ class Canvas {
     this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.fill();
   }
-}
+};

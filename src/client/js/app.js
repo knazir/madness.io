@@ -1,1 +1,2 @@
-const canvas = new Canvas();
+window.Madness = {};
+Madness.Canvas = new Canvas();

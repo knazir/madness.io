@@ -4,6 +4,7 @@
   "description": "A random io game",
   "main": "index.js",
   "scripts": {
+    "lint": "node_modules/.bin/eslint --ext .js . || true",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/nodemon src/server/server.js"
   },
@@ -24,5 +25,13 @@
   "dependencies": {
     "express": "^4.15.3",
     "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
