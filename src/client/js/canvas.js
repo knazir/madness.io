@@ -1,4 +1,6 @@
-Madness.Canvas = class Canvas {
+"use strict";
+
+window.Canvas = class Canvas {
   constructor() {
     this.canvas = this.setupCanvas();
     this.graph = this.canvas.getContext("2d");

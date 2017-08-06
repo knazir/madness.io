@@ -1,2 +1,3 @@
-window.Madness = {};
-Madness.Canvas = new Canvas();
+"use strict";
+
+window.Canvas = new Canvas();
