@@ -31,7 +31,7 @@ npm run lint
 Once the style linter reports no errors, open a pull request with your changes!
 
 ## Contributors
-* Abdullah Albanyan (abalbanyan)
-* Kashif Nazir (knazir)
-* Nathaniel Tesfalidet (ntesfalidet)
-* Jordan Wong (wongjordan8)
+* Abdullah Albanyan ([abalbanyan](https://www.github.com/abalbanyan))
+* Kashif Nazir ([knazir](https://www.github.com/knazir))
+* Nathaniel Tesfalidet ([ntesfalidet](https://www.github.com/ntesfalidet))
+* Jordan Wong ([wongjordan8](https://www.github.com/wongjordan8))
