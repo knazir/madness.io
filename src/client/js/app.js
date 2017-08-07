@@ -3,7 +3,7 @@ var io = require('socket.io-client');
 var socket = io();
 
 window.Game = {};
-Game.canvas = new Canvas();
+Game.canvas = new Game.Canvas();
 
 var player = null; /* {id, x, y} */
 var actors = {}; /* {id: {id, x, y}} */
