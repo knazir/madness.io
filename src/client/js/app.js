@@ -1,3 +1,4 @@
 "use strict";
 
-window.Canvas = new Canvas();
+window.Game = {};
+Game.canvas = new Canvas();

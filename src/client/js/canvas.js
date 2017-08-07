@@ -1,6 +1,6 @@
 "use strict";
 
-window.Canvas = class Canvas {
+Game.Canvas = class Canvas {
   constructor() {
     this.canvas = this.setupCanvas();
     this.graph = this.canvas.getContext("2d");
@@ -37,19 +37,23 @@ window.Canvas = class Canvas {
 
   ////////////////////////// Drawing //////////////////////////
 
+  clear() {
+    this.graph.clearRect(0, 0, this.width, thie.height);
+  }
+
   drawCircle(point, radius, fillColor) {
+    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.beginPath();
     this.graph.arc(point.x, point.y, radius, 0, Math.PI * 2);
     this.graph.stroke();
-    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.fill();
   }
 
   drawRectangle(point, width, height, fillColor) {
     point = this.normalizePoint(point, width, height);
+    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.rect(point.x, point.y, width, height);
     this.graph.stroke();
-    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.fill();
   }
 
@@ -58,6 +62,8 @@ window.Canvas = class Canvas {
   }
 
   drawPolygon(point, radius, sides, fillColor) {
+    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
+
     let theta = 0;
     let x = 0;
     let y = 0;
@@ -72,7 +78,6 @@ window.Canvas = class Canvas {
 
     this.graph.closePath();
     this.graph.stroke();
-    this.graph.fillStyle = fillColor || Config.DEFAULT_FILL;
     this.graph.fill();
   }
 };
