@@ -3,6 +3,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+
 const config = require("./config");
 
 app.use("/", express.static("src/client"));
