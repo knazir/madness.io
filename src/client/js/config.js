@@ -1,3 +1,5 @@
+window.Game = {};
+
 Config = {
   SCREEN_WIDTH: window.innerWidth,
   SCREEN_HEIGHT: window.innerHeight,

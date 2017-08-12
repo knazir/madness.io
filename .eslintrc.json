@@ -16,7 +16,7 @@
 
   "rules": {
     "indent": "off",
-    "no-console": ["error", {"allow": ["warn", "error"]}],
+    "no-console": "off",
     "no-global-assign": "off",
     "no-undef": "off",
     "no-unused-vars": ["error", {"vars": "local"}],

@@ -3,7 +3,7 @@
 let socket = io();
 
 window.Game = {};
-Game.canvas = new Canvas();
+Game.canvas = new Game.Canvas();
 
 let player = null; /* {id, x, y} */
 let actors = {}; /* {id: {id, x, y}} */
